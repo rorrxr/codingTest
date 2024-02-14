@@ -20,7 +20,6 @@ public class ArrayMultiplied2 {
 		int arr2[] = {1, 2, 100, -99, 1, 2, 3};
 	    
 	    System.out.println(solution(arr1));
-	    
 	    System.out.println(solution(arr2));
 	}
 
