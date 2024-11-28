@@ -33,11 +33,11 @@
 # 또 다시 반복하여 한자리수가 나올 때까지
 
 # 입력
-N = int(input()) # N = 1234 #문제의 핵심은 형변환 이라고 생각해요. int/str을 번갈아 
+N = list(input()) # N = 1234 #문제의 핵심은 형변환 이라고 생각해요. int/str을 번갈아 
 
 cnt = 0
 
-while N >= 10 :
+while len(N) > 1 :
     # 각 자리수의 합을 더하는
 
     # 1. 숫자로 값을 입력받았죠
@@ -47,12 +47,12 @@ while N >= 10 :
     # N = 1234567
     # N = 1+2+3+4+5+6+7 =28
     # [1,2,3,4,5,6,7]
-
-    N = sum(map(int, str(N)))
+    N = sum(map(int,N))
+    N = list(str(N))
     cnt += 1
     
 # 3의 배수인지
-if N % 3 == 0:
+if int(N[0]) %3 == 0:
     print(cnt)
     print("YES")
 else:
