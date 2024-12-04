@@ -34,12 +34,18 @@ T = int(input())
 
 for _ in range(T):
     N = int(input())
+    
+    # 참가자의 성적을 저장할 리스트
     scores = []
     
+    # 참가자의 성적 score 리스트에 저장
     for _ in range(N):
         scores.append(list(map(int, input().split())))
-        
+    
+    # 선택할 수 있는 사람의 최소 수
     cnt = 1
+    
+    # 성적 오름차순 정렬
     scores.sort()
 
     # for j in range(i+1, N):
@@ -48,11 +54,16 @@ for _ in range(T):
             
     # max_count = max(max_count, count)
     
+    # 첫 번째 참가자의 면접 점수를 max에 저장
     max = scores[0][1]
 
+    # 두 번째 사람부터 시작 for문
     for i in range(1,N):
+        # 만약 현재 사람의 서류 점수가 이전에 선택한 사람보다 낮으면
         if scores[i][1] < max :
+            # cnt 증가
             cnt += 1
+            # 선택한 사람의 서류 점수를 max에 저장
             max = scores[i][1]
         
     print(cnt)
