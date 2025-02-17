@@ -5,10 +5,10 @@
 
 📌 **블로그 해설 보러 가기:** [코딩테스트 풀이 블로그](https://deve1opment-story.tistory.com/category/Study/%EC%BD%94%EB%94%A9%20%ED%85%8C%EC%8A%A4%ED%8A%B8)
 
-📌 목표
-✅ 꾸준한 문제 풀이 (매일 1~3문제 풀이)
-✅ 다양한 알고리즘 학습
-✅ 효율적인 코드 작성 및 개선
+## 📌 목표
+✅ 꾸준한 문제 풀이 (매일 1~3문제 풀이) <br>
+✅ 다양한 알고리즘 학습<br>
+✅ 효율적인 코드 작성 및 개선<br>
 
 ---
 
@@ -25,11 +25,11 @@
 ```
 
 ## 🛠 사용 언어 및 환경
-언어: Python, Java (그 외 C/C++)
-개발 환경: VS Code
-버전 관리: Git & GitHub
+- 언어: Python, Java (그 외 C/C++)
+- 개발 환경: VS Code
+- 버전 관리: Git & GitHub
 
 ## 📌 코딩 테스트 문제 사이트
-[백준 온라인 저지](https://www.acmicpc.net/)
-[프로그래머스](https://programmers.co.kr/)
-[LeetCode](https://leetcode.com/)
+[백준 온라인 저지](https://www.acmicpc.net/) <br>
+[프로그래머스](https://programmers.co.kr/) <br>
+[LeetCode](https://leetcode.com/) <br>
