@@ -44,4 +44,12 @@
 |  |
 | ------- |
 | [1894-merge-strings-alternately](https://github.com/rorrxr/codingTest/tree/master/1894-merge-strings-alternately) |
+## Array
+|  |
+| ------- |
+| [0238-product-of-array-except-self](https://github.com/rorrxr/codingTest/tree/master/0238-product-of-array-except-self) |
+## Prefix Sum
+|  |
+| ------- |
+| [0238-product-of-array-except-self](https://github.com/rorrxr/codingTest/tree/master/0238-product-of-array-except-self) |
 <!---LeetCode Topics End-->
