@@ -1,29 +1,32 @@
 import sys
-
 input = sys.stdin.readline
 
-V, E = map(int, input().split())
+#floyd
 INF = int(1e9)
+n, m = map(int, input().split())
+graph = [[INF]*(n+1) for _ in range(n+1)]
 
-# 거리 테이블 초기화
-dist = [[INF] * (V + 1) for _ in range(V + 1)]
-
-# 간선 입력
-for _ in range(E):
+for _ in range(m):
     a, b, c = map(int, input().split())
-    dist[a][b] = c
+    graph[a][b] = c
 
-# 플로이드 워셜
-for k in range(1, V + 1):
-    for i in range(1, V + 1):
-        for j in range(1, V + 1):
-            if dist[i][j] > dist[i][k] + dist[k][j]:
-                dist[i][j] = dist[i][k] + dist[k][j]
+def floyd(graph, n):
+    dist = [row[:] for row in graph]
+    
+    for k in range(1, n+1):
+        for i in range(1, n+1):
+            for j in range(1, n+1):
+                if dist[i][j] > dist[i][k] + dist[k][j]:
+                    dist[i][j] = dist[i][k] + dist[k][j]
+    
+    return dist
 
-# 최소 사이클 찾기
-answer = INF
-for i in range(1, V + 1):
-    if dist[i][i] < answer:
-        answer = dist[i][i]
-
-print(answer if answer != INF else -1)
+dist = floyd(graph, n)
+ans = []
+for i in range(1, n+1):
+    ans.append(dist[i][i])
+min_dist = min(ans)
+if min_dist >= INF:
+    print(-1)
+else:
+    print(min_dist)
