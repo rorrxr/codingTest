@@ -1,6 +1,7 @@
 # 🚀 코딩 테스트 문제 풀이 기록
 
-이 저장소는 백준(BOJ), 프로그래머스(Programmers), 리트코드(LeetCode) 등 다양한 플랫폼의 코딩 테스트 문제를 풀이하고 기록하는 공간입니다.  
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=nubrox)](https://solved.ac/nubrox)
+<br> <br> 이 저장소는 백준(BOJ), 프로그래머스(Programmers), 리트코드(LeetCode) 등 다양한 플랫폼의 코딩 테스트 문제를 풀이하고 기록하는 공간입니다.  
 문제 풀이 후, 블로그에 상세한 해설과 복잡도 분석을 정리하고 있습니다.
 
 ✏️ **블로그 해설 보러 가기:** [코딩테스트 풀이 블로그](https://deve1opment-story.tistory.com/category/Study/%EC%BD%94%EB%94%A9%20%ED%85%8C%EC%8A%A4%ED%8A%B8)
