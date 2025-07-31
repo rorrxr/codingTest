@@ -1,0 +1,12 @@
+SELECT DISTINCT
+       c.ITEM_ID,
+       c.ITEM_NAME,
+       c.RARITY
+FROM ITEM_TREE AS t
+JOIN ITEM_INFO AS p
+  ON p.ITEM_ID = t.PARENT_ITEM_ID
+JOIN ITEM_INFO AS c
+  ON c.ITEM_ID = t.ITEM_ID
+WHERE p.RARITY = 'RARE'  -- RARE인 아이템
+-- 아이템 ID를 기준으로 내림차순 정렬
+ORDER BY c.ITEM_ID DESC;
