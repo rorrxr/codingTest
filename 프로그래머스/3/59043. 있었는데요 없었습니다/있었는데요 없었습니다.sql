@@ -1,0 +1,7 @@
+SELECT ai.ANIMAL_ID, ai.NAME
+FROM ANIMAL_INS ai 
+JOIN ANIMAL_OUTS ao
+ON ai.ANIMAL_ID = ao.ANIMAL_ID
+-- 보호소에 들어온 날짜보다 입양된 날짜가 더 빠른 동물을 찾기
+WHERE ao.DATETIME < ai.DATETIME
+ORDER BY ai.DATETIME ASC
