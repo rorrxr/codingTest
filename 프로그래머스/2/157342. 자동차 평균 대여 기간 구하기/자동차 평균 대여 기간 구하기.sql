@@ -1,0 +1,11 @@
+-- 기록별 대여 기간 : DATEDIFF로 비교 후 AVG로 평균
+-- 평균 값을 소수점 둘째 자리에서 반올림
+SELECT CAR_ID, 
+    ROUND(AVG(DATEDIFF(END_DATE, START_DATE) + 1), 1) AS AVERAGE_DURATION
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+GROUP BY CAR_ID
+-- 평균 대여 기간이 7일 이상
+HAVING AVERAGE_DURATION >= 7
+-- 평균 대여 기간 (AVERAGE_DURATION) 기준으로 내림차순 정렬
+-- 평균 대여 기간이 같으면 자동차 ID(CAR_ID) 기준으로 내림차순 정렬
+ORDER BY AVERAGE_DURATION DESC, CAR_ID DESC
